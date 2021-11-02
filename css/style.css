@@ -78,7 +78,10 @@ li{
 .d-inline{
 	display: inline-block;
 }
-
+.dwld{
+	  height: 50px;
+    padding: 13px;
+}
 
 
 /*-----------------------------margin-----------------------------*/
@@ -121,7 +124,15 @@ li{
 .pb-20{
 	padding-bottom: 20px;
 }
-
+.right-20{
+	right: 20px;
+}
+.bottom-20{
+	bottom: 50px;
+}
+.p-fix{
+	position: fixed;
+}
 
 /*-----------------------------border radious-----------------------------*/
 
@@ -130,6 +141,9 @@ li{
 }
 .br-16 {
 	border-radius: 16px;
+}
+.br-30{
+	border-radius: 30px;
 }
 
 
