@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+/* Define the custom dark variant for class-based dark mode in Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --font-display: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  --color-primary: #4F46E5;
+  --color-accent: #06B6D4;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  
+  --color-bg-light: #FFFFFF;
+  --color-bg-dark: #020617;
+  
+  --color-card-light: #F8FAFC;
+  --color-card-dark: #0F172A;
+  
+  --color-border-light: #E2E8F0;
+  --color-border-dark: #1E293B;
+  
+  --color-text-primary-light: #0F172A;
+  --color-text-primary-dark: #F8FAFC;
+  
+  --color-text-secondary-light: #64748B;
+  --color-text-secondary-dark: #94A3B8;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  
+  body {
+    @apply transition-colors duration-300 antialiased bg-[#fafaf9] text-slate-900 dark:bg-[#020617] dark:text-[#F8FAFC] selection:bg-indigo-100 selection:text-indigo-900 text-base leading-relaxed;
+    font-family: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+/* Custom modern shadows */
+.shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+}
+
+.dark .shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-premium-lg {
+  box-shadow: 0 20px 50px rgba(79, 70, 229, 0.04);
+}
+
+.dark .shadow-premium-lg {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom scroll reveal effect */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 dark:bg-slate-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300 dark:bg-slate-700;
+}
+
+/* Print Overrides
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 9.5pt !important;
+  }
+  
+  .print-card {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 1rem 0 !important;
+    background: transparent !important;
+    page-break-inside: avoid;
+  }
+
+  .print-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .print-aside {
+    border-top: 1px solid #e2e8f0 !important;
+    margin-top: 2rem !important;
+    padding-top: 2rem !important;
+  }
+}
+*/
