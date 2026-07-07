@@ -9,10 +9,13 @@ export default function NotFound() {
   const [typedText, setTypedText] = useState("");
 
   useEffect(() => {
-    setMounted(true);
-    if (typeof window !== "undefined") {
-      setPathname(window.location.pathname);
-    }
+    const timer = setTimeout(() => {
+      setMounted(true);
+      if (typeof window !== "undefined") {
+        setPathname(window.location.pathname);
+      }
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {

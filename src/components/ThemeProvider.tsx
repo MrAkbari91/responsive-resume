@@ -17,7 +17,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Sync initial state with document class (which was set by the blocking head script)
     const isDark = document.documentElement.classList.contains("dark");
-    setTheme(isDark ? "dark" : "light");
+    const timer = setTimeout(() => {
+      setTheme(isDark ? "dark" : "light");
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   const toggleTheme = () => {
