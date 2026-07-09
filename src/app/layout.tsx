@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Script from "next/script";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -122,18 +123,19 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* Google Analytics Tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-14879NYVR1"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-14879NYVR1');
-            `,
-          }}
+        {/* Google Analytics Tag (gtag.js) loaded with lazyOnload to prevent render blocking */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-14879NYVR1"
+          strategy="lazyOnload"
         />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-14879NYVR1');
+          `}
+        </Script>
         {/* Preload LCP Profile Image */}
         <link
           rel="preload"

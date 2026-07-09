@@ -4,11 +4,10 @@ import React, { useState } from "react";
 import { resumeData } from "@/data/resumeData";
 import ThemeToggle from "@/components/ThemeToggle";
 
-interface HeroProps {
-  handlePrint: () => void;
-}
-
-export default function Hero({ handlePrint }: HeroProps) {
+export default function Hero() {
+  const handlePrint = () => {
+    window.print();
+  };
   const [avatarError, setAvatarError] = useState(false);
   const { personalInfo } = resumeData;
 

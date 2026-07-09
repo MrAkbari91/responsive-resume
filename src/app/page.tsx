@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 
 // Import Modular Components
 import Hero from "@/components/sections/Hero";
@@ -13,59 +11,14 @@ import Skills from "@/components/sections/Skills";
 import Education from "@/components/sections/Education";
 import Languages from "@/components/sections/Languages";
 import Footer from "@/components/sections/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
-  
-  // Intersection Observer for scroll-reveal animations
-  useEffect(() => {
-    const reveals = document.querySelectorAll(".reveal");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.05, rootMargin: "0px 0px -10px 0px" }
-    );
-    reveals.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
-  // Prevent page inspect & right-click (Code protection)
-  // useEffect(() => {
-  //   const handleContextMenu = (e: MouseEvent) => {
-  //     e.preventDefault();
-  //   };
-  //   document.addEventListener("contextmenu", handleContextMenu);
-
-  //   const handleKeyDown = (e: KeyboardEvent) => {
-  //     if (
-  //       e.key === "F12" ||
-  //       (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i" || e.key === "J" || e.key === "j" || e.key === "C" || e.key === "c")) ||
-  //       (e.ctrlKey && (e.key === "U" || e.key === "u")) ||
-  //       (e.ctrlKey && (e.key === "S" || e.key === "s"))
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
-  //   document.addEventListener("keydown", handleKeyDown);
-
-  //   return () => {
-  //     document.removeEventListener("contextmenu", handleContextMenu);
-  //     document.removeEventListener("keydown", handleKeyDown);
-  //   };
-  // }, []);
-
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
     <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-16 w-full">
-      
+      {/* Client-side Scroll Reveal Animation Observer */}
+      <ScrollReveal />
+
       {/* Background Ambient Glows */}
       <div className="fixed inset-0 z-[-1] pointer-events-none bg-[#fafaf9] dark:bg-[#020617] transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_85%_10%,rgba(99,102,241,0.08)_0%,transparent_60%)] dark:bg-[radial-gradient(ellipse_60%_40%_at_85%_10%,rgba(99,102,241,0.14)_0%,transparent_60%)]"></div>
@@ -74,7 +27,7 @@ export default function Home() {
       </div>
 
       {/* HERO SECTION */}
-      <Hero handlePrint={handlePrint} />
+      <Hero />
 
       {/* MAIN LAYOUT WRAPPER (MOBILE FIRST: MAIN COL RENDERS FIRST) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 print-layout">
@@ -103,3 +56,4 @@ export default function Home() {
     </main>
   );
 }
+export type Home = typeof Home;
