@@ -1,0 +1,26 @@
+# Dhruv Akbari — Senior Full Stack Developer & eCommerce Architect
+
+> Results-driven Senior Full Stack Developer with 5+ years of experience architecting scalable web applications and enterprise eCommerce solutions. Proven expertise in Shopify, WordPress, React.js, and Next.js ecosystems. Led cross-functional teams delivering 70+ production solutions for international clients. Specialized in CRO, headless CMS architecture, REST/GraphQL API integration, and AI-assisted development workflows that improved team productivity by 30%+.
+
+This is a machine-readable portal for Dhruv Akbari's interactive resume, providing curated links and full context for AI crawlers, search agents, and LLMs.
+
+## Core Resume
+- [Full Markdown Resume](https://dhruv-akbari-resume.netlify.app/index.html.md) : Detailed text-based representation of Dhruv's experience, skills, and background.
+- [Live Interactive Resume](https://dhruv-akbari-resume.netlify.app) : The main interactive web page.
+
+## Professional Profiles
+- [GitHub Profile](https://github.com/MrAkbari91) : Open-source repositories, packages, and code contributions.
+- [LinkedIn Profile](https://linkedin.com/in/dhruvakbari) : Professional network, history, and endorsements.
+- [CodePen Profile](https://codepen.io/dhruvakbari) : Frontend code pens and UI/UX design experiments.
+
+## Verified Credentials
+- [HackerRank JavaScript Certification](https://www.hackerrank.com/certificates/8d3c5a1e057d) : Verified certification in JavaScript.
+- [HackerRank SQL Certification](https://www.hackerrank.com/certificates/9ccd8ad6e376) : Verified certification in SQL database design and query writing.
+
+## Contact Channels
+- [Email](mailto:dhruvakbari303@gmail.com) : Direct contact for projects and employment opportunities.
+- [WhatsApp Chat](https://wa.me/918460621361) : Direct chat link.
+
+## Optional
+- [Gitfolio Portfolio](https://dhruvakbarigitfolio.netlify.app) : Alternative portfolio page showcasing GitHub repository stats.
+- [Print Version](https://dhruv-akbari-resume.netlify.app?print=true) : Optimized CSS layout for physical printing or PDF generation.

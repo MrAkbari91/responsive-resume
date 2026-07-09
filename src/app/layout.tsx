@@ -140,7 +140,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="https://github.com/MrAkbari91.png"
+          href="https://avatars.githubusercontent.com/u/83423967?v=4"
           fetchPriority="high"
         />
         {/* Preload Font Awesome Webfonts to prevent invisible text flash */}

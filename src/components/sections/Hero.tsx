@@ -91,7 +91,7 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
                   {!avatarError ? (
                     <img
-                      src={`${personalInfo.github}.png`}
+                      src="https://avatars.githubusercontent.com/u/83423967?v=4"
                       alt={personalInfo.name}
                       onError={() => setAvatarError(true)}
                       className="w-full h-full object-cover"
