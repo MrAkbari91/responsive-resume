@@ -31,7 +31,7 @@ export default function Certifications() {
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs md:text-sm font-extrabold rounded-full uppercase tracking-wider dark:bg-emerald-950/20 dark:border-emerald-900/30 dark:text-emerald-400">
                   <i className="fas fa-circle-check text-xs"></i> Verified
                 </span>
-                <span className="text-xs md:text-sm font-bold text-slate-400 dark:text-slate-550 uppercase tracking-wider">{cert.issuer}</span>
+                <span className="text-xs md:text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">{cert.issuer}</span>
               </div>
               <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-200 group-hover/cert:text-indigo-600 dark:group-hover/cert:text-cyan-400 transition-colors duration-250 font-display">
                 {cert.title}

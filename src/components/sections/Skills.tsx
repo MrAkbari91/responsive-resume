@@ -21,7 +21,7 @@ export default function Skills() {
       <div className="space-y-5">
         {skills.map((group) => (
           <div key={group.category}>
-            <p className="text-[11px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2.5">{group.category}</p>
+            <p className="text-[11px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider mb-2.5">{group.category}</p>
             <div className="flex flex-wrap gap-2.5">
               {group.skills.map((skill) => (
                 <SkillBadge

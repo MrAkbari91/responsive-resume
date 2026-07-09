@@ -27,7 +27,7 @@ export default function Contact() {
             <i className="fas fa-phone"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Phone</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Phone</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.phone}</p>
           </div>
         </a>
@@ -43,7 +43,7 @@ export default function Contact() {
             <i className="fab fa-whatsapp"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">WhatsApp</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">WhatsApp</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.whatsapp}</p>
           </div>
         </a>
@@ -57,7 +57,7 @@ export default function Contact() {
             <i className="fas fa-envelope"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Email</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.email}</p>
           </div>
         </a>
@@ -73,7 +73,7 @@ export default function Contact() {
             <i className="fab fa-linkedin-in"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">LinkedIn</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">LinkedIn</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.linkedinUsername}</p>
           </div>
         </a>
@@ -89,7 +89,7 @@ export default function Contact() {
             <i className="fab fa-github"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">GitHub</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">GitHub</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.githubUsername}</p>
           </div>
         </a>
@@ -105,7 +105,7 @@ export default function Contact() {
             <i className="fas fa-globe"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Portfolio</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Portfolio</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.portfolio}</p>
           </div>
         </a>
@@ -121,7 +121,7 @@ export default function Contact() {
             <i className="fab fa-codepen"></i>
           </div>
           <div>
-            <p className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">CodePen</p>
+            <p className="text-[10px] md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">CodePen</p>
             <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200">{personalInfo.codepen}</p>
           </div>
         </a>

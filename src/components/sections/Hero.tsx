@@ -96,6 +96,7 @@ export default function Hero({ handlePrint }: HeroProps) {
                       alt={personalInfo.name}
                       onError={() => setAvatarError(true)}
                       className="w-full h-full object-cover"
+                      fetchPriority="high"
                     />
                   ) : (
                     <span>DA</span>
@@ -116,7 +117,7 @@ export default function Hero({ handlePrint }: HeroProps) {
                 <span className="block text-2xl md:text-3xl font-black text-indigo-600 dark:text-cyan-400 tracking-tight font-display">
                   {stat.value}
                 </span>
-                <span className="block text-[10px] md:text-base font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-1">
+                <span className="block text-[10px] md:text-base font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider mt-1">
                   {stat.label}
                 </span>
               </div>

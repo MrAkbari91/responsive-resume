@@ -104,7 +104,7 @@ export default function Experience() {
                       <span>{exp.position}</span>
                     </h3>
                     {/* Company */}
-                    <p className="text-sm md:text-base font-semibold text-slate-500 dark:text-slate-400 flex items-center gap-2 mt-1.5">
+                    <p className="text-sm md:text-base font-semibold text-slate-600 dark:text-slate-400 flex items-center gap-2 mt-1.5">
                       <i className="fas fa-building text-slate-400"></i>
                       <span>{exp.company}</span>
                     </p>
